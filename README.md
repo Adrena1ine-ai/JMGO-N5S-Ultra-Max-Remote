@@ -10,13 +10,15 @@ model-specific OTA manifests. It is **not** an OEM firmware distribution.
 ## Updates
 
 The modified Settings application contains the native
-**System / Check panel updates** entry. Its OTA client reads only stable
-GitHub Releases in this repository:
+**System / Check panel updates** entry. Its OTA client reads the
+model-specific manifest from this repository main branch. It supports
+controlled prereleases as well as stable GitHub Releases, with cryptographic
+APK validation:
 
 - Channel: n5sum
 - Model: KD11CN
 - Package: com.jmgo.setting.clone
-- Manifest asset: n5sum-update.json
+- Manifest: https://raw.githubusercontent.com/Adrena1ine-ai/JMGO-N5S-Ultra-Max-Remote/main/n5sum-update.json
 - Version tag: n5sum-vMAJOR.MINOR-codeNNNN
 - APK asset prefix: JMGO_N5SUM_REMOTE_
 
@@ -30,7 +32,7 @@ remove application data or silently bypass user consent.
 Version 3696 (V96.4, four V97.2 feature transfers) is currently a
 **pre-release** pending real screen checks for the localized network
 destinations, first-frame weekday date and MEMC interaction on KD11CN.
-Pre-releases are not returned by the stable releases/latest OTA endpoint.
+The manifest in main points to the current explicitly published channel version. Future releases must update that manifest after uploading assets. This avoids GitHub releases/latest 404 and anonymous API 403 rate limits. A native Android/JMGO installation still requires user confirmation.
 
 Never install these APKs on another model (including N5, N3 and KD11AX)
 without a separate compatibility review.
