@@ -7,10 +7,21 @@ This repository is intentionally **separate** from projects for N5, N3
 and other N5S firmware families. It contains release APKs, checksums and
 model-specific OTA manifests. It is **not** an OEM firmware distribution.
 
+## Current public beta
+
+**JMGO Settings+ v1.0 Beta** (Android versionCode **3726**), based on the
+2026.09.17.2 JMGO Settings app, 17 September 2026.
+
+- Official release label and Android launcher label: **JMGO Settings+ v1.0 Beta**.
+- Android System item: **Settings+ проверка обновления**.
+- [Download signed APK](https://github.com/Adrena1ine-ai/JMGO-N5S-Ultra-Max-Remote/releases/tag/n5sum-v1.0-code3726).
+- Compatible only with **N5S Ultra Max / KD11CN**.
+- Keep app data and existing remote bindings on in-place upgrades; same signing certificate.
+
 ## Updates
 
 The modified Settings application contains the native
-**System / Check panel updates** entry. Its OTA client reads the
+**System → Settings+ проверка обновления** entry. Its OTA client reads the
 model-specific manifest from this repository main branch. It supports
 controlled prereleases as well as stable GitHub Releases, with cryptographic
 APK validation:
@@ -29,9 +40,7 @@ remove application data or silently bypass user consent.
 
 ## Versions
 
-Version 3696 (V96.4, four V97.2 feature transfers) is currently a
-**pre-release** pending real screen checks for the localized network
-destinations, first-frame weekday date and MEMC interaction on KD11CN.
+Earlier experimental versions are preserved in GitHub Releases.
 The manifest in main points to the current explicitly published channel version. Future releases must update that manifest after uploading assets. This avoids GitHub releases/latest 404 and anonymous API 403 rate limits. A native Android/JMGO installation still requires user confirmation.
 
 Never install these APKs on another model (including N5, N3 and KD11AX)
