@@ -46,6 +46,14 @@ The manifest in main points to the current explicitly published channel version.
 Never install these APKs on another model (including N5, N3 and KD11AX)
 without a separate compatibility review.
 
+## Verified OTA installation
+
+The 3725 to 3726 upgrade was tested on KD11CN on 2026-11-03:
+the built-in updater detected and downloaded the signed release, and JMGO
+PackageInstaller completed the in-place upgrade. Installed APK SHA256 and
+data preservation were checked. A subsequent built-in check reported
+code3726 as current.
+
 ## Source and provenance
 
 Private development, controlled patches and build tests are maintained
