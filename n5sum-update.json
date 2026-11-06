@@ -2,9 +2,10 @@
   "channel": "n5sum",
   "model": "KD11CN",
   "package": "com.jmgo.setting.clone",
-  "tag": "n5sum-v1.0-code3813-full-kd11cn",
-  "versionCode": 3813,
+  "tag": "n5sum-v1-code3814",
+  "versionCode": 3814,
+  "versionName": "JMGO Settings+ v1 beta",
   "size": 53948998,
-  "sha256": "f0e9942564400050ff372980da30c07345e1ff5b6ad1aa41b6acaefc393d5489",
-  "download_url": "https://github.com/Adrena1ine-ai/JMGO-N5S-Ultra-Max-Remote/releases/download/n5sum-v1.0-code3813-full-kd11cn/JMGO_SettingsPlus_v1.0_Beta_3813_FULL_KD11CN_SIGNED.apk"
+  "sha256": "c8b972e19578e569b7ee9c42292fcefec09ab9e2a943d222219b5e0b87132c29",
+  "download_url": "https://github.com/Adrena1ine-ai/JMGO-N5S-Ultra-Max-Remote/releases/download/n5sum-v1-code3814/JMGO_N5SUM_REMOTE_SettingsPlus_v1_beta_CODE3814_SIGNED.apk"
 }
